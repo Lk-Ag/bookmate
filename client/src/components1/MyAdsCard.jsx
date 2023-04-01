@@ -19,7 +19,7 @@ function handleDelete(){
   const userId = localStorage.getItem('id');
   console.log("HANDLE FAV EXECUTTED");
   console.log(userCredentials)
-  axios.post("http://localhost:8000/deletead", {
+  axios.post("https://bookmate-server-3op8.onrender.com/deletead", {
         productId: item._id,
         userId: userCredentials.id ? userCredentials.id : userId
     }).then((res) => {

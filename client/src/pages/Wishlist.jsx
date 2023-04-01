@@ -13,7 +13,7 @@ export default function Wishlist(props) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/wishlist", {
+      .get("https://bookmate-server-3op8.onrender.com/wishlist", {
         params:{
           fav: fav
         }

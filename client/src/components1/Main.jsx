@@ -17,7 +17,7 @@ const Main = ({parameter,setParameter,userCredentials,setUserCredentials}) => {
 
     useEffect(() => {
       axios
-        .get("http://localhost:8000/all", {
+        .get("https://bookmate-server-3op8.onrender.com/all", {
           params: {
             bookname: parameter.bookname,
             location: parameter.location,

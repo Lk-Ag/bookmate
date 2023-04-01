@@ -21,7 +21,7 @@ const SignUp = ({pathname,setPathname}) => {
   function handleSubmit(event){
     
  
-    axios.post('http://localhost:8000/signup', {userData})
+    axios.post('https://bookmate-server-3op8.onrender.com/signup', {userData})
     .then((response)=> {
         console.log(response.data.message)
         alert(response.data.message);

@@ -92,7 +92,7 @@ const Sell = ({token,userCredentials,pathname,setPathname}) => {
  function  handleSubmit(e) {
     if(userCredentials.id){
       e.preventDefault()
-    axios.post("http://localhost:8000/sell", productData, {
+    axios.post("https://bookmate-server-3op8.onrender.com/sell", productData, {
     }).then(res => {
       console.log("HEOKOPJAJknosijfcso")
         console.log(res.data.message);

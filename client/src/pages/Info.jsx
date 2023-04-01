@@ -21,7 +21,7 @@ const Info = ({userCredentials,setUserCredentials,pathname,setPathname}) => {
  
   useEffect(() => {
     axios
-      .get("http://localhost:8000/info", {
+      .get("https://bookmate-server-3op8.onrender.com/info", {
         params: {
           _id: id
         },
@@ -56,7 +56,7 @@ for(var i=0;i<5;i++){
     const userId = localStorage.getItem('id');
     console.log("HANDLE FAV EXECUTTED");
     console.log(userCredentials)
-    axios.post("http://localhost:8000/fav", {
+    axios.post("https://bookmate-server-3op8.onrender.com/fav", {
           productId: data._id,
           userId: userCredentials.id ? userCredentials.id : userId
       }).then((res) => {

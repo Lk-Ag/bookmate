@@ -13,7 +13,7 @@ const Search = ({setParameter,parameter}) => {
   const [searchData, setSearchData] = useState("");
   
   useEffect(()=>{
-    axios.get('http://localhost:8000/search').then((response) => {
+    axios.get('https://bookmate-server-3op8.onrender.com/search').then((response) => {
       console.log("SEARCH DATA FROM BACKEND");
       console.log(response.data);
       setSearchData(response.data);

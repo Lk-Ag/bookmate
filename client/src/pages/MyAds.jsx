@@ -13,7 +13,7 @@ export default function MyAds(props) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/myads", {
+      .get("https://bookmate-server-3op8.onrender.com/myads", {
         params:{
           productId: productArray
         }

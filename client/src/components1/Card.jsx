@@ -26,7 +26,7 @@ function handleFavorite(){
 
   console.log("HANDLE FAV EXECUTTED");
   console.log(userCredentials)
-  axios.post("http://localhost:8000/fav", {
+  axios.post("https://bookmate-server-3op8.onrender.com/fav", {
         productId: item._id,
         userId: userCredentials.id ? userCredentials.id : userId
     }).then((res) => {
